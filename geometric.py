@@ -4,7 +4,8 @@ def prob(n, p):
     return 1/(pow(p,n))
 
 def infoMeasure(n, p):
-    return -math.log(prob(n,p),2)
+    tmp= -math.log(prob(n,p),2)
+    return tmp
 
 def sumProb(N, p):
     i = 0
