@@ -11,7 +11,8 @@ def prob(n, p, N):
     return (factorial(N))/((pow(p,n))*factorial(n)*factorial(N-n));
 
 def infoMeasure(n, p, N):
-    return -math.log(prob(n,p,N),2)
+    tmp= -math.log(prob(n,p,N),2)
+    return tmp
 
 def sumProb(n, p, N):
     i = 0
